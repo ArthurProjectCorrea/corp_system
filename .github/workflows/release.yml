@@ -25,7 +25,3 @@ jobs:
         run: pnpm install
       - name: Build
         run: pnpm build
-      - name: Publish with Changesets
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: pnpm exec changeset publish
