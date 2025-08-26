@@ -1,0 +1,12 @@
+{
+  "commitAnalyze": {
+    "tools": [
+      "grep_search",
+      "get_errors",
+      "read_file",
+      "list_code_usages"
+    ],
+    "description": "Ferramentas para análise de arquivos staged e contexto de commit.",
+    "icon": "search"
+  }
+}

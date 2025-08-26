@@ -8,7 +8,8 @@
     "check-types": "turbo run check-types",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "husky install",
-    "commit": "cz"
+  "commit": "cz",
+  "smart-commit": "node scripts/smart-commit.js"
     },
   "devDependencies": {
     "@changesets/cli": "^2.29.6",
