@@ -3,33 +3,42 @@
   "version": "0.0.1",
   "description": "",
   "author": "",
-
-
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-  "build": "nest build",
-  "start": "node dist/main.js",
-  "start:dev": "nest start --watch --port 4000",
-  "dev": "nest start --watch --port 4000",
+    "build": "nest build",
+    "start": "node dist/main.js",
+    "start:dev": "nest start --watch --port 4000",
+    "dev": "nest start --watch --port 4000",
   "check-types": "tsc --noEmit",
   "lint": "eslint . --ext .ts",
-  "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\""
+  "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+  "test": "jest",
+  "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
     "@nestjs/common": "^11.0.1",
+    "@nestjs/config": "^4.0.2",
     "@nestjs/core": "^11.0.1",
+    "@nestjs/mapped-types": "*",
     "@nestjs/platform-express": "^11.0.1",
+    "@nestjs/swagger": "^11.2.0",
+    "@nestjs/typeorm": "^11.0.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.2",
+    "pg": "^8.16.3",
     "reflect-metadata": "^0.2.2",
-    "rxjs": "^7.8.1"
+    "rxjs": "^7.8.1",
+    "swagger-ui-express": "^5.0.1",
+    "typeorm": "^0.3.26"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
     "@eslint/eslintrc": "^3.2.0",
     "@eslint/js": "^9.18.0",
     "@nestjs/cli": "^11.0.0",
     "@nestjs/schematics": "^11.0.0",
     "@nestjs/testing": "^11.0.1",
+    "@repo/eslint-config": "workspace:*",
     "@swc/cli": "^0.6.0",
     "@swc/core": "^1.10.7",
     "@types/express": "^5.0.0",
